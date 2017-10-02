@@ -51,7 +51,7 @@ class m170730_003014_create_banner_table extends Migration
             'image_id',
             'image',
             'id',
-            'CASCADE'
+            'SET NULL'
         );
 
         // creates index for column `creator_id`
@@ -68,7 +68,7 @@ class m170730_003014_create_banner_table extends Migration
             'creator_id',
             'user',
             'id',
-            'CASCADE'
+            'RESTRICT'
         );
 
         // creates index for column `updater_id`
@@ -85,7 +85,7 @@ class m170730_003014_create_banner_table extends Migration
             'updater_id',
             'user',
             'id',
-            'CASCADE'
+            'RESTRICT'
         );
     }
 
