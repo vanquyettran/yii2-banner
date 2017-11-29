@@ -15,8 +15,8 @@ use yii\behaviors\TimestampBehavior;
 
 class Banner extends \common\modules\banner\baseModels\Banner
 {
-    const TYPE_TOP_BANNER = 'top_banner';
-    const TYPE_SLIDER_ITEM = 'slider_item';
+    const TYPE_TOP_BANNER = 1;
+    const TYPE_SLIDER_ITEM = 2;
 
     public static function getTypes()
     {
